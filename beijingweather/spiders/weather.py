@@ -32,9 +32,9 @@ class WeatherSpider(scrapy.Spider):
         lst = ['今天日期:' + Tod_Weather_Date[0].encode('utf-8'), '\n', '天气:' + Tod_Weather_Wea[0].encode('utf-8'), '\n', '低温:' + Tod_Weather_Tem[0].encode('utf-8'), "\n", '风力:' + Tom_Weather_Win[0].encode(
             'utf-8'), "\n", "\n", '明天日期:' + Tom_Weather_Date[0].encode('utf-8'), "\n", '天气情况:' + Tom_Weather_Wea[0].encode('utf-8'), "\n", '低温:' + Tom_Weather_Tem[0].encode('utf-8'), "\n", '风力:' + Tom_Weather_Win[0].encode('utf-8')]
 
-        _user = "80231093@qq.com"
-        _pwd = "ysqdaefeykmkbifh"
-        _to = "80231093@qq.com"
+        _user = "XXXXXXXXXX"
+        _pwd = "XXXXXXXXXX"
+        _to = "XXXXXXXXXX"
 
         msg = MIMEText(''.join(lst))
         msg["Subject"] = "Two day's weather"
