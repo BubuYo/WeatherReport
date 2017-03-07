@@ -33,7 +33,7 @@ class WeatherSpider(scrapy.Spider):
                Tod_Weather_Date[0].encode('utf-8'), '\n', '天气:' +
                Tod_Weather_Wea[0].encode('utf-8'), '\n', '低温:' +
                Tod_Weather_Tem[0].encode('utf-8'), "\n", '风力:' +
-               Tom_Weather_Win[0].encode('utf-8'), "\n", "\n", '明天日期:' +
+               Tod_Weather_Win[0].encode('utf-8'), "\n", "\n", '明天日期:' +
                Tom_Weather_Date[0].encode('utf-8'), "\n", '天气情况:' +
                Tom_Weather_Wea[0].encode('utf-8'), "\n", '低温:' +
                Tom_Weather_Tem[0].encode('utf-8'), "\n", '风力:' +
