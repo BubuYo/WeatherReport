@@ -29,8 +29,15 @@ class WeatherSpider(scrapy.Spider):
         Tom_Weather_Tem = response.xpath(
             '//*[@id="7d"]/ul/li[2]/p[2]/span/text()').extract()
 
-        lst = ['今天日期:' + Tod_Weather_Date[0].encode('utf-8'), '\n', '天气:' + Tod_Weather_Wea[0].encode('utf-8'), '\n', '低温:' + Tod_Weather_Tem[0].encode('utf-8'), "\n", '风力:' + Tom_Weather_Win[0].encode(
-            'utf-8'), "\n", "\n", '明天日期:' + Tom_Weather_Date[0].encode('utf-8'), "\n", '天气情况:' + Tom_Weather_Wea[0].encode('utf-8'), "\n", '低温:' + Tom_Weather_Tem[0].encode('utf-8'), "\n", '风力:' + Tom_Weather_Win[0].encode('utf-8')]
+        lst = ['今天日期:' +
+               Tod_Weather_Date[0].encode('utf-8'), '\n', '天气:' +
+               Tod_Weather_Wea[0].encode('utf-8'), '\n', '低温:' +
+               Tod_Weather_Tem[0].encode('utf-8'), "\n", '风力:' +
+               Tom_Weather_Win[0].encode('utf-8'), "\n", "\n", '明天日期:' +
+               Tom_Weather_Date[0].encode('utf-8'), "\n", '天气情况:' +
+               Tom_Weather_Wea[0].encode('utf-8'), "\n", '低温:' +
+               Tom_Weather_Tem[0].encode('utf-8'), "\n", '风力:' +
+               Tom_Weather_Win[0].encode('utf-8')]
 
         _user = "XXXXXXXXXX"
         _pwd = "XXXXXXXXXX"
